@@ -1,0 +1,7 @@
+#Wed Jul 05 10:34:22 CEST 2017
+base.0=C\:\\Users\\acer\\Music\\TOLK\\platforms\\android\\build\\intermediates\\transforms\\dex\\armv7\\debug\\folders\\1000\\10\\instant-run-bootstrap_843a34f72ea3c98037f1b73a5a313c46536bdeba
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\Users\\acer\\Music\\TOLK\\platforms\\android\\build\\intermediates\\transforms\\dex\\armv7\\debug\\folders\\1000\\10\\instant-run_1b37d05f4e0c8a0bcd28d74c3874432e359fefc7\\classes.dex
+base.1=C\:\\Users\\acer\\Music\\TOLK\\platforms\\android\\build\\intermediates\\transforms\\dex\\armv7\\debug\\folders\\1000\\10\\instant-run_1b37d05f4e0c8a0bcd28d74c3874432e359fefc7
+file.0=C\:\\Users\\acer\\Music\\TOLK\\platforms\\android\\build\\intermediates\\transforms\\dex\\armv7\\debug\\folders\\1000\\10\\instant-run-bootstrap_843a34f72ea3c98037f1b73a5a313c46536bdeba\\classes.dex
