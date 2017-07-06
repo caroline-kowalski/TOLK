@@ -88,8 +88,8 @@ ext {
 }
 
 // PLUGIN GRADLE EXTENSIONS START
-apply from: "cordova-plugin-crosswalk-webview/starter-xwalk.gradle"
-apply from: "cordova-plugin-firebase/starter-build.gradle"
+apply from: "cordova-plugin-crosswalk-webview/TOLK-xwalk.gradle"
+apply from: "cordova-plugin-firebase/TOLK-build.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
 def hasBuildExtras = file('build-extras.gradle').exists()
