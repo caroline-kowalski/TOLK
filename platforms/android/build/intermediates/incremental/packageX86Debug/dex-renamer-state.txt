@@ -1,4 +1,4 @@
-#Thu Jul 06 12:50:34 CEST 2017
+#Tue Jul 18 13:33:13 CEST 2017
 base.0=C\:\\Users\\acer\\Music\\TOLK\\platforms\\android\\build\\intermediates\\transforms\\dex\\x86\\debug\\folders\\1000\\1f\\main
 renamed.0=classes.dex
 file.0=C\:\\Users\\acer\\Music\\TOLK\\platforms\\android\\build\\intermediates\\transforms\\dex\\x86\\debug\\folders\\1000\\1f\\main\\classes.dex

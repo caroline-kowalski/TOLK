@@ -54330,6 +54330,14 @@ ion-footer.footer {
   color: #ff5757;
 }
 
+page-accueil {
+  font-family: BentonSans-Light;
+}
+
+page-accueil .ion-slide {
+  font-family: BentonSans-Light;
+}
+
 page-accueil .body {
   text-align: center;
   background-color: #eceded;
@@ -54656,6 +54664,11 @@ page-new-group .empty button {
 page-new-group .empty button.activated,
 page-new-group .empty button:active {
   background: #4c4c4c;
+}
+
+page-notes #logo {
+  float: left;
+  width: 50px;
 }
 
 page-tabs .tabs-ios {
