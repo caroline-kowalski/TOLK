@@ -224,6 +224,45 @@ export class HomePage {
     }).present();
   }
 
+
+
+//Modifier la profession
+  setProfession() {
+    this.alert = this.alertCtrl.create({
+      title: 'Modifier la profession',
+      message: "Veuillez entrer une nouvelle profession.",
+      inputs: [
+        {
+          name: 'profession',
+          placeholder: 'Votre profession',
+          value: this.user.profession
+        }
+      ],
+      buttons: [
+        {
+          text: 'Annuler',
+          handler: data => { }
+        },
+        {
+          text: 'Sauvegarder',
+          handler: data => {
+            let profession = data["profession"];
+          
+              // Vérifiez si la profession entrée est différente de la description actuelle
+            if (this.user.profession != profession) {
+              this.angularfire.object('/accounts/' + this.user.userId).update({
+                profession: profession
+              }).then((success) => {
+                this.alertProvider.showProfileUpdatedMessage();
+              }).catch((error) => {
+                this.alertProvider.showErrorMessage('profile/error-update-profile');
+              });
+            }
+          }
+        }
+      ]
+    }).present();
+  }
   // Changer le courrier électronique de l'utilisateur. Utilise Validator.ts pour valider le courrier électronique saisi. Après, mettez à jour les données utilisateur sur la base de données.
    // Lorsque l'utilisateur a changé son courrier électronique, il doit confirmer la nouvelle adresse e-mail.
   setEmail() {

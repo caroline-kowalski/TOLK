@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar>
   <img width="50" src="assets/images/logoblanc.png"/>
-    <ion-title>Profil</ion-title>
+    <ion-title>Mon profil</ion-title>
     <ion-buttons end>
       <button ion-button (click)="logout()"><ion-icon name="md-log-out" item-right></ion-icon></button>
     </ion-buttons>
@@ -21,12 +21,22 @@
         <h2 tappable (click)="setName()">{{user.name}} </h2>
         <p tappable (click)="setUsername()" class="username">@{{user.username}}</p>
       </ion-item>
+
       <ion-list-header>
         Statut
       </ion-list-header>
       <ion-item no-lines>
         <p tappable (click)="setDescription()" class="description">{{user.description}}</p>
       </ion-item>
+
+       <ion-list-header>
+        Profession
+      </ion-list-header>
+      <ion-item no-lines>
+        <p tappable (click)="setProfession()" class="profession"> {{user.profession}}</p>
+      </ion-item>
+
+
       <ion-list-header>
         Plus
       </ion-list-header>

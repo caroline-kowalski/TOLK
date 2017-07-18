@@ -2,7 +2,7 @@
   <ion-navbar>
 
   <img id="logo" src="assets/images/logoblanc.png"/>
-    <ion-title>Amis</ion-title> 
+    <ion-title>Mon coach</ion-title> 
     <ion-buttons>
       <button id="demandeAmi" ion-button icon-only tappable (click)="manageRequests()"><ion-icon name="md-filing"></ion-icon><ion-badge color="danger" *ngIf="friendRequests">{{friendRequests.length}}</ion-badge></button>
     </ion-buttons>
@@ -16,7 +16,7 @@
   <div class="empty-list" *ngIf="friends && friends.length == 0">
     <h1><ion-icon name="contacts"></ion-icon></h1>
     <p>Vous n'avez pas encore d'ami</p>
-    <button ion-button icon-left tappable (click)="searchPeople()"><ion-icon name="search"></ion-icon>Chercher des personnes</button>
+    <button ion-button icon-left tappable (click)="searchPeople()"><ion-icon name="search"></ion-icon>Recherche</button>
   </div>
   <!-- Montrer la liste d'amis -->
   <ion-list class="avatar-list" *ngIf="friends && friends.length > 0">

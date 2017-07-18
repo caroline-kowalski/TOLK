@@ -2,7 +2,8 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
-
+import { ItemDetailPage } from '../pages/item-detail/item-detail';
+import { AddItemPage } from '../pages/add-item/add-item';
 import { AccueilPage } from '../pages/accueil/accueil';
 import { LoginPage } from '../pages/login/login';
 import { HomePage } from '../pages/home/home';
@@ -15,6 +16,7 @@ import { SearchPeoplePage } from '../pages/search-people/search-people';
 import { RequestsPage } from '../pages/requests/requests';
 import { UserInfoPage } from '../pages/user-info/user-info';
 import { NewMessagePage } from '../pages/new-message/new-message';
+import { NotesPage } from '../pages/notes/notes';
 import { MessagePage } from '../pages/message/message';
 import { NewGroupPage } from '../pages/new-group/new-group';
 import { GroupPage } from '../pages/group/group';
@@ -61,6 +63,8 @@ firebase.initializeApp(Login.firebaseConfig);
 @NgModule({
   declarations: [
     MyApp,
+    ItemDetailPage,
+    AddItemPage,
     AccueilPage,
     LoginPage,
     HomePage,
@@ -73,6 +77,7 @@ firebase.initializeApp(Login.firebaseConfig);
     RequestsPage,
     UserInfoPage,
     NewMessagePage,
+    NotesPage,
     MessagePage,
     NewGroupPage,
     GroupPage,
@@ -100,6 +105,8 @@ firebase.initializeApp(Login.firebaseConfig);
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    ItemDetailPage,
+    AddItemPage,
     AccueilPage,
     LoginPage,
     HomePage,
@@ -112,6 +119,7 @@ firebase.initializeApp(Login.firebaseConfig);
     RequestsPage,
     UserInfoPage,
     NewMessagePage,
+    NotesPage,
     MessagePage,
     NewGroupPage,
     GroupPage,

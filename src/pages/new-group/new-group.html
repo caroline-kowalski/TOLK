@@ -53,7 +53,7 @@
       <!-- Aucun ami pour créer un groupe. -->
       <div class="empty" *ngIf="friends && friends.length == 0">
         <p>Vous n'avez pas d'ami pour commencer une conversation de groupe.</p>
-        <button ion-button icon-left tappable (click)="searchPeople()"><ion-icon name="md-search"></ion-icon>Chercher des personnes</button>
+        <button ion-button icon-left tappable (click)="searchPeople()"><ion-icon name="md-search"></ion-icon>Rechercher</button>
       </div>
       <!-- Afficher les amis pour ajouter / supprimer au groupe.-->
       <ion-list class="avatar-list" *ngIf="friends && friends.length > 0">

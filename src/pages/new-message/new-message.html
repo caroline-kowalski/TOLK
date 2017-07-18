@@ -13,7 +13,7 @@
   <div class="empty-list" *ngIf="friends && friends.length == 0">
     <h1><ion-icon name="md-contacts"></ion-icon></h1>
     <p>Vous n'avez pas encore ajouter d'amis.</p>
-    <button ion-button icon-left tappable (click)="searchPeople()"><ion-icon name="md-search"></ion-icon>Chercher des personnes</button>
+    <button ion-button icon-left tappable (click)="searchPeople()"><ion-icon name="md-search"></ion-icon>Rechercher</button>
   </div>
   <!-- Afficher les amis pour commencer une conversation avec -->
   <ion-list class="avatar-list" *ngIf="friends && friends.length > 0">

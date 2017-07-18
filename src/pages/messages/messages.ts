@@ -165,6 +165,8 @@ export class MessagesPage {
           // Modifier la description par défaut.
           let description = "Je suis disponible pour discuter";
 
+          let profession = "Modifier ma profession";
+
           // Insérez des données sur notre base de données en utilisant AngularFire.
           this.angularfire.object('/accounts/' + userId).set({
             userId: userId,
@@ -174,6 +176,7 @@ export class MessagesPage {
             img: img,
             email: email,
             description: description,
+            profession: profession,
             dateCreated: new Date().toString()
           }).then(() => {
             this.loadingProvider.hide();

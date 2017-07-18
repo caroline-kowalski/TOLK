@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { HomePage } from '../home/home';
+
+import { NotesPage } from '../notes/notes';
 import { MessagesPage } from '../messages/messages';
 import { GroupsPage } from '../groups/groups';
 import { FriendsPage } from '../friends/friends';
@@ -16,6 +18,7 @@ export class TabsPage {
   groups: any = GroupsPage;
   friends: any = FriendsPage;
   profile: any = HomePage;
+  notes: any = NotesPage;
   private unreadMessagesCount: any;
   private friendRequestCount: any;
   private unreadGroupMessagesCount: any;
